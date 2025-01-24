@@ -5,20 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/8a9d34b7ee.js" crossorigin="anonymous"></script>
+    <style>
+        @import url(css/standard_flex.css);
+        @import url(css/menu.css);
+    </style>
     <title>Information</title>
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href=""><i class="fa-solid fa-bars"></i>MENU</a></li>
-                <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                <li><a href=""><img src="img/logo.png" alt="logo"></a></li>
-                <li><a href="">LOG IND<i class="fa-solid fa-user"></i></a></li>
-                <li><a href="">Nyhedsbreve</a></li>
-                <li><a href="">Podcast</a></li>
-                <li><a href="">Køb abonnement</a></li>
+        <nav class="full_width">
+            <ul class="menu">
+                <li class="menu__item menu__bars"><a href="" class="menu__link"><i class="fa-solid fa-bars"></i>MENU</a></li>
+                <li class="menu__item menu__search"><a href="" class="menu__link"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li class="menu__item menu__logo"><a href="" class="menu__link"><img src="img/logo.png" alt="logo"></a></li>
+                <li class="menu__item menu__login"><a href="" class="menu__link">LOG IND<i class="fa-solid fa-user"></i></a></li>      
+                <li class="menu__item menu__news"><a href="" class="menu__link">Nyhedsbreve</a></li>
+                <li class="menu__item menu__podcast"><a href="" class="menu__link">Podcast</a></li>
+                <li class="menu__item menu__subscribe"><a href="" class="menu__link">Køb abonnement</a></li>
             </ul>
         </nav>
     </header>
