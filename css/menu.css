@@ -1,0 +1,93 @@
+nav {
+    height: 10rem;
+    box-shadow: 3px 0 6px 1px rgb(172, 172, 172);
+}
+
+.menu {
+    --gap: .5rem; 
+    --line-offset: calc(var(--gap) / 2);
+    --line-thickness: 1px;
+    --line-color: rgb(224, 224, 224);
+
+    height: inherit;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(24, 1fr);
+    margin: 0 auto;
+    column-gap: .5rem;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    padding: 0 1rem;
+}
+
+.menu::before,
+.menu::after {
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    background-color: var(--line-color);
+    z-index: 1;
+}
+
+.menu::after {
+    inline-size: 100vw;
+    block-size: var(--line-thickness);
+    inset-inline-start: 0;
+    inset-block-start: calc(var(--line-offset) * 28);
+}
+
+
+.menu__item {
+    list-style: none;
+    
+}
+
+.menu__link {
+    color: black;
+    text-decoration: none;
+}
+
+.menu__logo {
+    max-width: 25rem;
+    grid-area: 1/7/2/19;
+    justify-self: center;
+}
+
+.menu__bars {
+    grid-area: 1/1/2/3;
+}
+
+.menu__bars .fa-bars {
+    margin-right: .5rem;
+}
+
+.menu__search {
+    grid-area: 1/2/2/3;
+    margin-left: 8px;
+}
+
+.menu__login {
+    grid-area: 1/23/2/-1;
+    justify-self: end;
+}
+
+.menu__login .fa-user {
+    margin-left: .5rem;
+}
+
+.menu__news {
+    grid-area: 2/11/3/12;
+    justify-self: center;
+}
+
+.menu__podcast {
+    grid-area: 2/12/3/13;
+    justify-self: center;
+}
+
+.menu__subscribe {
+    grid-area: 2/13/3/15;
+    flex-flow: row wrap;
+    justify-self: center;
+}
