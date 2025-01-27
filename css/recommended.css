@@ -1,0 +1,36 @@
+.recommended {
+    grid-column: 2 / 4;
+    grid-template-columns: auto min-content min-content;
+    column-gap: .5rem;
+    align-items: center;
+}
+
+.recommended h2 {
+    width: fit-content;
+    color: #dd0000;
+}
+
+.recommended .fa-solid {
+    width: fit-content;
+}
+
+.recommended [class*="fa"] {
+    color: #cccccc;
+    font-size: 24px;
+}
+
+/* ! SLIDER */
+
+.recommended__slider {
+    display: grid;
+    grid-column: 1/-1;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    column-gap: 1rem;
+    padding-top: 2rem;
+    margin-top: .8rem;
+    border-top: dotted 1px black;
+}
+
+.card__img {
+    margin-bottom: .5rem;
+}
