@@ -18,7 +18,7 @@
     color: rgb(134, 134, 134);
 }
 
-.type__time span{
+.type__time span {
     color: #ed1c25;
     margin-right: .5rem;
 }
@@ -35,10 +35,11 @@
 .article__caption {
     position: absolute;
     max-width: 20rem;
-    top: 160px;
-    left: -335px;
+    top: 35%;
+    left: -50%;
     text-align: end;
-    color: rgb(108, 108, 108);;
+    color: rgb(108, 108, 108);
+    ;
 }
 
 .fa-inner-text {
@@ -47,7 +48,8 @@
 
 .fa-camera {
     display: block;
-    color: rgb(65, 65, 65);;
+    color: rgb(65, 65, 65);
+    ;
 }
 
 .article__main {
@@ -88,7 +90,7 @@
     color: rgb(13 170 214);
 }
 
-.author__img img{
+.author__img img {
     border-radius: 50%;
 }
 
@@ -122,7 +124,7 @@
 }
 
 .fa-ul {
-    padding-left: var(--fa-li-margin,1.5em);
+    padding-left: var(--fa-li-margin, 1.5em);
     margin-left: 0;
 }
 
@@ -135,7 +137,7 @@
     margin-left: 1rem;
 }
 
-.some__links a{
+.some__links a {
     width: 100px;
     display: block;
     text-decoration: none;
@@ -162,4 +164,12 @@
 
 .some__links--email {
     background-color: rgb(153 153 153);
+}
+
+.paragraph {
+    --mask: linear-gradient(to bottom,
+            rgba(0, 0, 0, 1) 0, rgba(0, 0, 0, 1) 40%,
+            rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0) 0) 100% 50% / 100% 100% repeat-x;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
 }
