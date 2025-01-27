@@ -1,12 +1,13 @@
 nav {
     height: 10rem;
+    box-shadow: 3px 0 6px 1px rgb(172, 172, 172);
 }
 
 .menu {
     --gap: .5rem; 
     --line-offset: calc(var(--gap) / 2);
-    --line-thickness: 2px;
-    --line-color: rgb(205, 205, 205);
+    --line-thickness: 1px;
+    --line-color: rgb(224, 224, 224);
 
     height: inherit;
     display: grid;
@@ -16,8 +17,8 @@ nav {
     column-gap: .5rem;
     align-items: center;
     overflow: hidden;
-    margin: 0 1rem;
     position: relative;
+    padding: 0 1rem;
 }
 
 .menu::before,
@@ -33,7 +34,7 @@ nav {
     inline-size: 100vw;
     block-size: var(--line-thickness);
     inset-inline-start: 0;
-    inset-block-start: calc(var(--line-offset) * 27);
+    inset-block-start: calc(var(--line-offset) * 28);
 }
 
 
@@ -63,7 +64,7 @@ nav {
 
 .menu__search {
     grid-area: 1/2/2/3;
-    margin-left: .5rem;
+    margin-left: 8px;
 }
 
 .menu__login {

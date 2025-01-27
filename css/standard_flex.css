@@ -5,13 +5,18 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
+
+/* ul li {
+	list-style-type: none;
+} */
 
 body {
 	display: grid;
 	grid-template-columns: 
 	[fullw-start]1fr
-	[content-start]20rem 1fr[content-end]
+	[content-start]20rem 2fr[content-end]
 	1fr[fullw-end];
 	gap: 1rem;
 }
@@ -31,6 +36,10 @@ header>*, main>*, footer>* {
 .full_width {
 	grid-column: 1 / -1;
 	display: block;
+}
+
+h1 {
+	font-size: 32px;
 }
 
 p {
